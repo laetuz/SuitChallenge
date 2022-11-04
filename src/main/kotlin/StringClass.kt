@@ -1,5 +1,6 @@
 class StringClass {
 
+    val hString="\nHasil: "
     var seri:String = ("\nHasil: \nWah seri!")
     val kalah:String = ("\nHasil: \nYahh anda kalah! :pp")
     val menang:String = ("\nHasil: \nSelamat anda menang!")

@@ -31,15 +31,15 @@ fun suit2(){
         when (readln().lowercase()) {
             //Step 5. masukkan pilihan variable dan aksi yang akan dilakukan
             Gunting -> {
-                println(usname2)
+                println(kelas.usname2)
                 us2gunting()
                 //Step 6. Masukkan Whilestat untuk melompat ke while.
                 whileStat="benar"}
             Batu -> {
-                println(usname2)
+                println(kelas.usname2)
                 us2batu()
                 whileStat="benar"}
-            Kertas -> { println(usname2)
+            Kertas -> { println(kelas.usname2)
                 us2kertas()
                 whileStat="benar"}
             else -> {
@@ -59,15 +59,15 @@ fun suit(){
         when (readln().lowercase()) {
             //Step 5. masukkan pilihan variable dan aksi yang akan dilakukan
             Gunting -> {
-                println(comname)
+                println(kelas.comname)
                 compgunting()
                 //Step 6. Masukkan Whilestat untuk melompat ke while.
                 whileStat="benar"}
             Batu -> {
-                println(comname)
+                println(kelas.comname)
                 compbatu()
                 whileStat="benar"}
-            Kertas -> { println(comname)
+            Kertas -> { println(kelas.comname)
                 compkertas()
                 whileStat="benar"}
             else -> {
@@ -80,9 +80,6 @@ fun suit(){
 val Batu = "batu"
 val Gunting = "gunting"
 val Kertas = "kertas"
-
-val comname = "Komputer: "
-val usname2 = "Masukkan Player 2: "
 
 var kelas = StringClass()
 

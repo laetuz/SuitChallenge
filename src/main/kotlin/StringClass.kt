@@ -6,6 +6,8 @@ class StringClass {
     val menangplayer1 = ("\nHasil: \nSelamat player 1 menang!")
     val menangplayer2 = ("\nHasil: \nSelamat player 2 menang!")
 
+    val comname = "Komputer: "
+    val usname2 = "Masukkan Player 2: "
     /*fun Hasil(hasil:String){
     ("Hasil: $hasil").toString()
     }*/

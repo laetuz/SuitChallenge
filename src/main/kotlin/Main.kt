@@ -2,6 +2,33 @@ fun main() {
     suit()
 }
 
+fun suit2(){
+    var whileStat=""
+
+    do {
+        println("Masukkan pemain 1: ")
+        //Step 3. Buatlah interface input untuk user dengan menggunakan readln()
+        //Step 4. Buatlah condition when
+        when (readln().lowercase()) {
+            //Step 5. masukkan pilihan variable dan aksi yang akan dilakukan
+            Gunting -> {
+                println(usname2)
+                us2gunting()
+                //Step 6. Masukkan Whilestat untuk melompat ke while.
+                whileStat="benar"}
+            Batu -> {
+                println(usname2)
+                us2batu()
+                whileStat="benar"}
+            Kertas -> { println(usname2)
+                us2kertas()
+                whileStat="benar"}
+            else -> {
+                println("input salah")
+            }
+        }
+    } while(whileStat=="")
+}
 
 fun suit(){
     var whileStat=""

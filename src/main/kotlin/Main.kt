@@ -32,15 +32,15 @@ fun suit2(){
             //Step 5. masukkan pilihan variable dan aksi yang akan dilakukan
             Gunting -> {
                 println(kelas.usname2)
-                us2gunting()
+                kelas.us2gunting()
                 //Step 6. Masukkan Whilestat untuk melompat ke while.
                 whileStat="benar"}
             Batu -> {
                 println(kelas.usname2)
-                us2batu()
+                kelas.us2batu()
                 whileStat="benar"}
             Kertas -> { println(kelas.usname2)
-                us2kertas()
+                kelas.us2kertas()
                 whileStat="benar"}
             else -> {
                 println("input salah")
@@ -85,29 +85,3 @@ var kelas = StringClass()
 
 
 val randomNum = ((1..3).random())
-
-//hasil user2
-fun us2gunting(){
-    when(readln().lowercase()){
-        Gunting -> print("${Gunting}\n" + kelas.seri)
-        Batu -> print("${Batu}\n" + kelas.menangplayer2)
-        Kertas -> print("${Kertas}\n" + kelas.menangplayer1)
-    }
-}
-
-fun us2kertas(){
-    when(readln().lowercase()){
-        Gunting -> print("${Gunting}\n" + kelas.menangplayer2)
-        Batu -> print("${Batu}\n" + kelas.menangplayer1)
-        Kertas -> print("${Kertas}\n" + kelas.seri)
-    }
-}
-
-fun us2batu(){
-    when(readln().lowercase()){
-        Gunting -> print("${Gunting}\n" + kelas.menangplayer1)
-        Batu -> print("${Batu}\n" + kelas.seri)
-        Kertas -> print("${Kertas}\n" + kelas.menangplayer2)
-    }
-}
-

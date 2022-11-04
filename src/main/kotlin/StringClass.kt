@@ -12,6 +12,33 @@ class StringClass {
     ("Hasil: $hasil").toString()
     }*/
 
+    //Hasil PVP/ Player 2
+    fun us2gunting(){
+        when(readln().lowercase()){
+            Gunting -> print("${Gunting}\n" + kelas.seri)
+            Batu -> print("${Batu}\n" + kelas.menangplayer2)
+            Kertas -> print("${Kertas}\n" + kelas.menangplayer1)
+        }
+    }
+
+    fun us2kertas(){
+        when(readln().lowercase()){
+            Gunting -> print("${Gunting}\n" + kelas.menangplayer2)
+            Batu -> print("${Batu}\n" + kelas.menangplayer1)
+            Kertas -> print("${Kertas}\n" + kelas.seri)
+        }
+    }
+
+    fun us2batu(){
+        when(readln().lowercase()){
+            Gunting -> print("${Gunting}\n" + kelas.menangplayer1)
+            Batu -> print("${Batu}\n" + kelas.seri)
+            Kertas -> print("${Kertas}\n" + kelas.menangplayer2)
+        }
+    }
+
+
+
     //Hasil Computer
     fun compgunting(){
         when(randomNum){

@@ -84,7 +84,8 @@ val Kertas = "kertas"
 val comname = "Komputer: "
 val usname2 = "Masukkan Player 2: "
 
-val seri= ("\nHasil: \nWah seri!")
+var kelas = StringClass()
+
 val kalah = ("\nHasil: \nYahh anda kalah! :pp")
 val menang = ("\nHasil: \nSelamat anda menang!")
 
@@ -96,49 +97,49 @@ val randomNum = ((1..3).random())
 //hasil user2
 fun us2gunting(){
     when(readln().lowercase()){
-        Gunting -> print("${Gunting}\n" + seri)
-        Batu -> print("${Batu}\n" + menangplayer2)
-        Kertas -> print("${Kertas}\n" + menangplayer1)
+        Gunting -> print("${Gunting}\n" + kelas.seri)
+        Batu -> print("${Batu}\n" + kelas.menangplayer2)
+        Kertas -> print("${Kertas}\n" + kelas.menangplayer1)
     }
 }
 
 fun us2kertas(){
     when(readln().lowercase()){
-        Gunting -> print("${Gunting}\n" + menangplayer2)
-        Batu -> print("${Batu}\n" + menangplayer1)
-        Kertas -> print("${Kertas}\n" + seri)
+        Gunting -> print("${Gunting}\n" + kelas.menangplayer2)
+        Batu -> print("${Batu}\n" + kelas.menangplayer1)
+        Kertas -> print("${Kertas}\n" + kelas.seri)
     }
 }
 
 fun us2batu(){
     when(readln().lowercase()){
-        Gunting -> print("${Gunting}\n" + menangplayer1)
-        Batu -> print("${Batu}\n" + seri)
-        Kertas -> print("${Kertas}\n" + menangplayer2)
+        Gunting -> print("${Gunting}\n" + kelas.menangplayer1)
+        Batu -> print("${Batu}\n" + kelas.seri)
+        Kertas -> print("${Kertas}\n" + kelas.menangplayer2)
     }
 }
 
 // hasil komputer
 fun compgunting(){
     when(randomNum){
-        1 -> print("${Gunting}\n" + seri)
-        2 -> print("${Batu}\n" + kalah)
-        else -> print("${Kertas}\n" + menang)
+        1 -> print("${Gunting}\n" + kelas.seri)
+        2 -> print("${Batu}\n" + kelas.kalah)
+        else -> print("${Kertas}\n" + kelas.menang)
     }
 }
 
 fun compkertas(){
     when(randomNum){
-        1 -> print("${Gunting}\n" + kalah)
-        2 -> print("${Batu}\n" + menang)
-        else -> print("${Kertas}\n" + seri)
+        1 -> print("${Gunting}\n" + kelas.kalah)
+        2 -> print("${Batu}\n" + kelas.menang)
+        else -> print("${Kertas}\n" + kelas.seri)
     }
 }
 
 fun compbatu(){
     when(randomNum){
-        1 -> println("${Gunting}\n" + menang)
-        2 -> println("${Batu}\n" + seri)
-        else -> println("${Kertas}\n" + kalah)
+        1 -> println("${Gunting}\n" + kelas.menang)
+        2 -> println("${Batu}\n" + kelas.seri)
+        else -> println("${Kertas}\n" + kelas.kalah)
     }
 }

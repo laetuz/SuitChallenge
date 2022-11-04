@@ -1,5 +1,24 @@
 fun main() {
-    suit()
+    suitChallenge()
+}
+
+fun suitChallenge(){
+    var whileStat2=""
+    println("==========================")
+    println("GAME SUIT TERMINAL VERSION")
+    println("==========================")
+    do {
+        println("Pilih Permainan: \n" +
+                "1. vs player\n" +
+                "2. vs computer\n" +
+                "\nKetik Angka: ")
+        when(readln().toInt()){
+            1 -> {suit2()
+                whileStat2="benar"}
+            2 -> {suit()
+                whileStat2="benar"}
+        }
+    } while (whileStat2=="")
 }
 
 fun suit2(){

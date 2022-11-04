@@ -81,7 +81,7 @@ val Batu = "batu"
 val Gunting = "gunting"
 val Kertas = "kertas"
 
-val comname = "Masukkan Komputer: "
+val comname = "Komputer: "
 val usname2 = "Masukkan Player 2: "
 
 val seri= ("\nHasil: \nWah seri!")

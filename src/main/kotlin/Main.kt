@@ -86,11 +86,6 @@ val usname2 = "Masukkan Player 2: "
 
 var kelas = StringClass()
 
-val kalah = ("\nHasil: \nYahh anda kalah! :pp")
-val menang = ("\nHasil: \nSelamat anda menang!")
-
-val menangplayer1 = ("\nHasil: \nSelamat player 1 menang!")
-val menangplayer2 = ("\nHasil: \nSelamat player 2 menang!")
 
 val randomNum = ((1..3).random())
 

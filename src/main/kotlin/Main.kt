@@ -60,15 +60,15 @@ fun suit(){
             //Step 5. masukkan pilihan variable dan aksi yang akan dilakukan
             Gunting -> {
                 println(kelas.comname)
-                compgunting()
+                kelas.compgunting()
                 //Step 6. Masukkan Whilestat untuk melompat ke while.
                 whileStat="benar"}
             Batu -> {
                 println(kelas.comname)
-                compbatu()
+                kelas.compbatu()
                 whileStat="benar"}
             Kertas -> { println(kelas.comname)
-                compkertas()
+                kelas.compkertas()
                 whileStat="benar"}
             else -> {
                 println("input salah")
@@ -111,27 +111,3 @@ fun us2batu(){
     }
 }
 
-// hasil komputer
-fun compgunting(){
-    when(randomNum){
-        1 -> print("${Gunting}\n" + kelas.seri)
-        2 -> print("${Batu}\n" + kelas.kalah)
-        else -> print("${Kertas}\n" + kelas.menang)
-    }
-}
-
-fun compkertas(){
-    when(randomNum){
-        1 -> print("${Gunting}\n" + kelas.kalah)
-        2 -> print("${Batu}\n" + kelas.menang)
-        else -> print("${Kertas}\n" + kelas.seri)
-    }
-}
-
-fun compbatu(){
-    when(randomNum){
-        1 -> println("${Gunting}\n" + kelas.menang)
-        2 -> println("${Batu}\n" + kelas.seri)
-        else -> println("${Kertas}\n" + kelas.kalah)
-    }
-}

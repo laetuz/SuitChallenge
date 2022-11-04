@@ -72,7 +72,30 @@ val menang = ("\nHasil: \nSelamat anda menang!")
 
 val randomNum = ((1..3).random())
 
+//hasil user2
+fun us2gunting(){
+    when(readln().lowercase()){
+        Gunting -> print("${Gunting}\n" + seri)
+        Batu -> print("${Batu}\n" + menangplayer2)
+        Kertas -> print("${Kertas}\n" + menangplayer1)
+    }
+}
 
+fun us2kertas(){
+    when(readln().lowercase()){
+        Gunting -> print("${Gunting}\n" + menangplayer2)
+        Batu -> print("${Batu}\n" + menangplayer1)
+        Kertas -> print("${Kertas}\n" + seri)
+    }
+}
+
+fun us2batu(){
+    when(readln().lowercase()){
+        Gunting -> print("${Gunting}\n" + menangplayer1)
+        Batu -> print("${Batu}\n" + seri)
+        Kertas -> print("${Kertas}\n" + menangplayer2)
+    }
+}
 
 // hasil komputer
 fun compgunting(){

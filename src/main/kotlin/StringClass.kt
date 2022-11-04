@@ -1,4 +1,5 @@
 class StringClass {
+
     var seri:String = ("\nHasil: \nWah seri!")
     val kalah:String = ("\nHasil: \nYahh anda kalah! :pp")
     val menang:String = ("\nHasil: \nSelamat anda menang!")
@@ -8,9 +9,6 @@ class StringClass {
 
     val comname = "Komputer: "
     val usname2 = "Masukkan Player 2: "
-    /*fun Hasil(hasil:String){
-    ("Hasil: $hasil").toString()
-    }*/
 
     //Hasil PVP/ Player 2
     fun us2gunting(){

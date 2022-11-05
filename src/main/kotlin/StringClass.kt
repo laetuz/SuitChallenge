@@ -11,6 +11,12 @@ open class StringClass {
     val comname = "Komputer: "
     val usname2 = "Masukkan Player 2: "
 
+    fun header(){
+        println("==========================")
+        println("GAME SUIT TERMINAL VERSION")
+        println("==========================")
+    }
+
     //Hasil PVP/ Player 2
     open fun suitHasil(){
         when(readln().lowercase()){

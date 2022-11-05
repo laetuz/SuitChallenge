@@ -1,12 +1,18 @@
 fun main() {
-    suitChallenge()
+    suit2()
 }
+
+val Batu = "batu"
+val Gunting = "gunting"
+val Kertas = "kertas"
+
+var kelas = StringClass()
+
+
+val randomNum = ((1..3).random())
 
 fun suitChallenge(){
     var whileStat2=""
-    println("==========================")
-    println("GAME SUIT TERMINAL VERSION")
-    println("==========================")
     do {
         println("Pilih Permainan: \n" +
                 "1. vs player\n" +
@@ -22,6 +28,7 @@ fun suitChallenge(){
 }
 
 fun suit2(){
+    kelas.header()
     var whileStat=""
 
     do {
@@ -50,8 +57,8 @@ fun suit2(){
 }
 
 fun suit(){
+    kelas.header()
     var whileStat=""
-
     do {
         println("Masukkan pemain 1: ")
         //Step 3. Buatlah interface input untuk user dengan menggunakan readln()
@@ -77,11 +84,4 @@ fun suit(){
     } while(whileStat=="")
 }
 
-val Batu = "batu"
-val Gunting = "gunting"
-val Kertas = "kertas"
 
-var kelas = StringClass()
-
-
-val randomNum = ((1..3).random())

@@ -32,7 +32,7 @@ fun suit2(){
             //Step 5. masukkan pilihan variable dan aksi yang akan dilakukan
             Gunting -> {
                 println(kelas.usname2)
-                kelas.us2gunting()
+                kelas.suitHasil()
                 //Step 6. Masukkan Whilestat untuk melompat ke while.
                 whileStat="benar"}
             Batu -> {

@@ -1,4 +1,4 @@
-class StringClass {
+open class StringClass {
 
     val hString="\nHasil: "
     var seri:String = ("\nHasil: \nWah seri!")
@@ -12,7 +12,7 @@ class StringClass {
     val usname2 = "Masukkan Player 2: "
 
     //Hasil PVP/ Player 2
-    fun us2gunting(){
+    open fun suitHasil(){
         when(readln().lowercase()){
             Gunting -> print("${Gunting}\n" + kelas.seri)
             Batu -> print("${Batu}\n" + kelas.menangplayer2)

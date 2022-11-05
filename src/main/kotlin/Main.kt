@@ -11,6 +11,7 @@ var kelas = StringClass()
 
 val randomNum = ((1..3).random())
 
+//Menu picker for suit2() and suit()
 fun suitChallenge(){
     var whileStat2=""
     do {
@@ -27,6 +28,7 @@ fun suitChallenge(){
     } while (whileStat2=="")
 }
 
+//Main Menu for 2 Players Suit Challenge
 fun suit2(){
     kelas.header()
     var whileStat=""
@@ -56,6 +58,7 @@ fun suit2(){
     } while(whileStat=="")
 }
 
+//Main Menu for Player VS CPU Suit Challenge
 fun suit(){
     kelas.header()
     var whileStat=""

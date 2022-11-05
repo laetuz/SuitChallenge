@@ -7,6 +7,7 @@ val Gunting = "gunting"
 val Kertas = "kertas"
 
 var kelas = StringClass()
+val hasil = HasilUser()
 
 
 val randomNum = ((1..3).random())
@@ -41,15 +42,15 @@ fun suit2(){
             //Step 5. masukkan pilihan variable dan aksi yang akan dilakukan
             Gunting -> {
                 println(kelas.usname2)
-                kelas.suitHasil()
+                hasil.gunting()
                 //Step 6. Masukkan Whilestat untuk melompat ke while.
                 whileStat="benar"}
             Batu -> {
                 println(kelas.usname2)
-                kelas.us2batu()
+                hasil.batu()
                 whileStat="benar"}
             Kertas -> { println(kelas.usname2)
-                kelas.us2kertas()
+                hasil.kertas()
                 whileStat="benar"}
             else -> {
                 println("input salah")
@@ -70,15 +71,15 @@ fun suit(){
             //Step 5. masukkan pilihan variable dan aksi yang akan dilakukan
             Gunting -> {
                 println(kelas.comname)
-                kelas.compgunting()
+                kelas.gunting()
                 //Step 6. Masukkan Whilestat untuk melompat ke while.
                 whileStat="benar"}
             Batu -> {
                 println(kelas.comname)
-                kelas.compbatu()
+                kelas.batu()
                 whileStat="benar"}
             Kertas -> { println(kelas.comname)
-                kelas.compkertas()
+                kelas.kertas()
                 whileStat="benar"}
             else -> {
                 println("input salah")

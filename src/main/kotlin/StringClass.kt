@@ -17,35 +17,8 @@ open class StringClass {
         println("==========================")
     }
 
-    //Hasil PVP/ Player 2
-    open fun suitHasil(){
-        when(readln().lowercase()){
-            Gunting -> print("${Gunting}\n" + kelas.seri)
-            Batu -> print("${Batu}\n" + kelas.menangplayer2)
-            Kertas -> print("${Kertas}\n" + kelas.menangplayer1)
-        }
-    }
-
-    fun us2kertas(){
-        when(readln().lowercase()){
-            Gunting -> print("${Gunting}\n" + kelas.menangplayer2)
-            Batu -> print("${Batu}\n" + kelas.menangplayer1)
-            Kertas -> print("${Kertas}\n" + kelas.seri)
-        }
-    }
-
-    fun us2batu(){
-        when(readln().lowercase()){
-            Gunting -> print("${Gunting}\n" + kelas.menangplayer1)
-            Batu -> print("${Batu}\n" + kelas.seri)
-            Kertas -> print("${Kertas}\n" + kelas.menangplayer2)
-        }
-    }
-
-
-
     //Hasil Computer
-    fun compgunting(){
+    open fun gunting(){
         when(randomNum){
             1 -> print("${Gunting}\n" + kelas.seri)
             2 -> print("${Batu}\n" + kelas.kalah)
@@ -53,7 +26,7 @@ open class StringClass {
         }
     }
 
-    fun compkertas(){
+    open fun kertas(){
         when(randomNum){
             1 -> print("${Gunting}\n" + kelas.kalah)
             2 -> print("${Batu}\n" + kelas.menang)
@@ -61,7 +34,7 @@ open class StringClass {
         }
     }
 
-    fun compbatu(){
+    open fun batu(){
         when(randomNum){
             1 -> println("${Gunting}\n" + kelas.menang)
             2 -> println("${Batu}\n" + kelas.seri)
